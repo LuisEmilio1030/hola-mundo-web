@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Hola Mundo!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .info {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .github-link {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        
+        .github-link:hover {
+            background: #555;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .timestamp {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hola Mundo! 👋</h1>
+        <p>Bienvenido a mi página web desplegada automáticamente con GitHub Pages</p>
+        
+        <div class="info">
+            <h3>✨ Características</h3>
+            <p>✅ Despliegue automático desde GitHub<br>
+            ✅ Integración continua con GitHub Actions<br>
+            ✅ Alojado en GitHub Pages (gratuito)<br>
+            ✅ Diseño responsivo y moderno</p>
+        </div>
+        
+        <a href="https://github.com/LuisEmilio1030/hola-mundo-web" class="github-link">Ver Repositorio en GitHub</a>
+        
+        <div class="timestamp">
+            <p>Última actualización: <span id="date"></span></p>
+        </div>
+    </div>
+    
+    <script>
+        // Mostrar la fecha actual
+        document.getElementById('date').textContent = new Date().toLocaleString('es-ES');
+    </script>
+</body>
+</html>
